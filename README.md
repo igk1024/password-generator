@@ -1,6 +1,4 @@
-# Password Generator Starter Code
-
-# Professional Portfolio
+# Password Generator
 
 ## Description
 Create an application that an employee can use to generate a random password based on criteria they’ve selected.
