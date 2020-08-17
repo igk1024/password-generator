@@ -26,6 +26,6 @@ THEN the password is either displayed in an alert or written to the page<br />
 <h2>GitHub Repository URL</h2>
 <a href="https://github.com/igk1024/password-generator" target="_blank">GitHub.com/igk1024/password-generator</a>
 
-## Mock-Up
-The following animation shows the web application's appearance and functionality:
-<img src="/assets/images/professional-portfolio.gif">
+## Screenshot
+The following screenshot shows the web application's appearance:
+<img src="/assets/images/password-generator-screenshot.png">
