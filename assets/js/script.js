@@ -1,7 +1,7 @@
 // Assignment code here
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+document.querySelector("#generate").addEventListener("click", writePassword);
 
 // Various Arrays 
 var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
@@ -21,6 +21,7 @@ function generatePassword() {
   console.log(generatePassword);
   var confirmLength = (prompt("How many characters would you like your password to contain?"));
 
+
     // Loop if answer is outside the parameters 
     while(confirmLength <= 8 || confirmLength >= 128) {
       alert("Password length must be between 8-128 characters. Try again.");
@@ -32,6 +33,7 @@ function generatePassword() {
  var confirmNumericCharacter = confirm("Click OK to confirm if you would like to include numeric characters");    
  var confirmLowerCase = confirm("Click OK to confirm if you would like to include lowercase characters");
  var confirmUpperCase = confirm("Click OK to confirm if you would like to include uppercase characters");
+ 
    // Loop if answer is outside the parameters 
    while(confirmUpperCase === false && confirmLowerCase === false && confirmSpecialCharacter === false && confirmNumericCharacter === false) {
      alert("You must choose at least one parameter");
@@ -62,7 +64,7 @@ function generatePassword() {
 
    console.log(passwordCharacters)
 
-   // Empty string to be filled based on for loop selecting random characters from the array
+   // Create password based on random characters
    var randomPassword = ""
    
    for (var i = 0; i < confirmLength; i++) {
@@ -71,8 +73,6 @@ function generatePassword() {
    }
    return randomPassword;
 }
-
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate")
